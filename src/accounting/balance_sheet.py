@@ -12,11 +12,12 @@ print(participant_list)
 balance_sheet_file.close()
 
 # Creating new content
-current_date = datetime.now()
+current_date = str(datetime.now())
 
 data_structure = {
         "id": 1001,
-        "test": {'id': 'daniel', 'point': 2300}
+        "test": {'id': 'daniel', 'point': 2300},
+        "time": current_date
     }
 
 # over writing new content
